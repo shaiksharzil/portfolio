@@ -1,0 +1,747 @@
+@font-face {
+    font-family: 'skyer-400';
+    src: url(./skyer-400.ttf) format('truetype');
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: skyer-400;
+    scroll-behavior: smooth;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    cursor: pointer;
+}
+.bottom-footer a{
+    color: #C1A7EE;
+}
+.navhead h2:hover{
+    color: #C1A7EE;
+}
+.menuslider h2:hover{
+    color: #C1A7EE;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    box-shadow: 0px 0px 5px black;
+    z-index: 99;
+} 
+.logo{
+    height: 100%;
+    width: 40%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    color: #C1A7EE;
+}
+.navhead{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+}
+.menubutton{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    padding-right: 25px;
+}
+.line1{
+    height: 2px;
+    width: 40px;
+    background-color: black;
+    transition: linear 0.5s;
+}
+.line2{
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    transition: linear 0.5s;
+}
+.line3{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    transition: linear 0.5s;
+}
+.nav1{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+.menuslider{
+    position: fixed;
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: ease-in-out;
+    display: none;
+    background-color: white;
+    animation: menu 0.5s;
+    z-index: 99;
+}
+@keyframes menu {
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+.main{
+    height: calc(100% - 100px);
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.mainleft{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 50px;
+}
+.name{
+    font-weight: 900;
+    font-size: 50px;
+}
+.mainleft span{
+    color: #C1A7EE;
+}
+.frontend{
+    font-weight: 700;
+    font-size: 40px;
+}
+.mainright{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.mainright img{
+    height: 80%;
+    width: 80vh;
+    object-fit: cover;
+}
+.mainbottom{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+.socialicons{
+    height: 7%;
+    width: 50%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.socialicons i{
+    font-size: 30px;
+    border-radius: 50%;
+    color: #C1A7EE;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+}
+.ri-linkedin-fill{
+    font-size: 30px;
+    border-radius: 50%;
+}
+.ri-instagram-line{
+    font-size: 30px;
+    border-radius: 50%;
+}
+.mainleft button{
+    height: 50px;
+    width: 150px;
+    border: white;
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 900;
+    color: #C1A7EE;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+}
+.main2{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.main2 h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.page2head{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.main2 h3{
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+}
+.skill1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.skill1 div {
+    transition: ease;
+}
+.skill2 div{
+    transition: ease;
+}
+.main3 .project{
+    transition: ease;
+}
+.html{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.html h2{
+    font-size: 35px;
+    color: orangered;
+}
+.html i{
+    color: orangered;
+    font-size: 50px;
+    background-color: white;
+}
+.css{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.css h2{
+    font-size: 35px;
+    color: #0852e9;
+}
+.css i{
+    color:  #0852e9;
+    font-size: 50px;
+    background-color: white;
+}
+.javascript{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.javascript h2{
+    font-size: 35px;
+    color: #f7e025;
+}
+.javascript i{
+    color: #f7e025;
+    font-size: 50px;
+    background-color: white;
+}
+.bootstrap{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.bootstrap h2{
+    font-size: 35px;
+    color: #8118fa;
+}
+.bootstrap i{
+    color: #8118fa;
+    font-size: 50px;
+    background-color: white;
+}
+.skill2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.skill2 div{
+    margin-bottom: 15px;
+}
+.skill1 div{
+    margin-bottom: 15px;
+}
+.react{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.react h2{
+    font-size: 35px;
+    color: #08d9ff;
+}
+.react i{
+    color: #08d9ff;
+    font-size: 50px;
+    background-color: white;
+}
+.python{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.python h2{
+    font-size: 35px;
+    color: #0079b0;
+}
+.python img{
+    color: #0079b0;
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    background-color: white;
+}
+.git{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.git h2{
+    font-size: 35px;
+    color: black;
+}
+.git i{
+    color: black;
+    font-size: 50px;
+    background-color: white;
+}
+.msoffice{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius:15px;
+}
+.msoffice h2{
+    font-size: 35px;
+    color: #e43a00;
+}
+.msoffice img{
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    background-color: white;
+}
+.main3{
+    width: 100%;
+}
+.main3 h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.project{
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.project img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    scale: 0.9;
+    z-index: -1;
+}
+.project h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contact1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactbox{
+    height: 300px;
+    width: 40%;
+    background-color: white;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+}
+.contactbox h2{
+    color: #C1A7EE;
+    margin-bottom: 30px;
+}
+.inputfield{
+    height: 350px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+input{
+    width: 48%;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: none;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+
+}
+input:nth-child(1){
+    margin-right: 4%;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    padding: 10px 0px 0px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: none;
+    resize: none;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+}
+.inputfield button{
+    height: 40px;
+    width: 100px;
+    border: white;
+    color: #C1A7EE;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-size: 15px;
+}
+.footer-social-icons .ri-github-fill{
+    font-size: 30px;
+    border-radius: 50%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: #F8F8F8;
+    padding-block: 40px 60px;
+}
+.top-footer p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.middle-footer .footer-menu{
+    display: flex;
+}
+.footer_menu_list{
+    list-style: none;
+}
+.footer_menu_list a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+    margin-inline: 20px;
+}
+.footer-social-icons{
+    display: flex;
+    gap: 30px;   
+}
+.bottom-footer{
+    font-size: 14px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        padding-left: 20px;
+    }
+    nav{
+        height: 60px;
+    }
+    .nav1{
+        height: 100px;
+    }
+    .menu{
+        display: flex;
+    }
+    .navhead{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mainleft{
+        height: 50vh;
+        width: 100vw;
+        padding-left: 20px;
+        gap: 10px;
+    }
+    .name{
+        font-weight: 900;
+        font-size: 35px;
+    }
+    .frontend{
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .mainbottom{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 15px;
+        padding-right: 20px;
+    }
+    .socialicons{
+        height: 100%;
+    }
+    .mainleft button{
+        height: 40px;
+        width: 150px;
+        border: white;
+        background-color: transparent;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .mainright{
+        height: 50vh;
+        width: 100vw;
+    }
+    .mainright img{
+        height:90%;
+        width: 95%;
+    }
+    .main2{
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .main2 h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .page2head{
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .about h3{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .skillmain{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-between;
+    }
+    .skill1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 10px;
+        padding-right: 10px;
+    }
+    .skill1 div{
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 0.25 black ;
+        padding: 5px 15px;
+        margin-bottom: 0px;
+    }
+    .skill2 div{
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 0.25 black ;
+        padding: 5px 15px;
+    }
+    .skill i{
+        font-size: 30px;
+    }
+    .skill img{
+        height: 32px;
+        width: 32px;
+    }
+    .skill1 h2{
+        font-size: 20px;
+    }
+    .skill2 h2{
+        font-size: 20px;
+    }
+    .skill2{
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content:flex-start ;
+        gap: 10px;
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+    .git h2{
+        font-size: 16px;
+    }
+    .main3 h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .project{
+        width: 95%;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: stretch;
+        box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    }
+    .projects{
+        gap: 15px;
+    }
+    .projects a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main3 img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+        z-index: -1;
+    }
+    .contact1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contactbox{
+        height: 200px;
+        width: 95%;
+        background-color: white;
+        border-radius: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    }
+    .inputfield{
+        height: 350px;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        padding-left: 15px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        border: none;
+    }
+    textarea{
+        width: 100%;
+        height: 200px;
+        padding: 10px 0px 0px 15px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        border: none;
+        resize: none;
+    }
+    .inputfield button{
+        height: 30px;
+        width: 70px;
+        border: none;
+        background-color: white;
+        border-radius: 7px;
+        font-size: 15px;
+    }
+    input:nth-child(1){
+        margin-right: 0px;
+    }
+    .socialicons i{
+        font-size: 25px;
+        height: 35px;
+        width: 35px;
+    }
+}
