@@ -12,6 +12,10 @@ let about = document.querySelector("#aboutlink");
 let home= document.querySelector("#home");
 let project = document.querySelector(".projects");
 let contact = document.querySelector("#contactlink");
+let submit = document.querySelector(".submit");
+let submitbtn = document.querySelector(".submitbtn");
+let nameinput = document.querySelector(".nameinput");
+let messageinput = document.querySelector("#messageinput");
 let menuclick = true
 menuButton.addEventListener("click", function(){
     if (menuclick == true) {
@@ -36,6 +40,11 @@ menuButton.addEventListener("click", function(){
         menuslider.style.display = `none`;
         menuclick = true;
     }
+})
+submit.addEventListener("click", function(){
+    let namevalue = nameinput.value;
+    let messagevalue = messageinput.value;
+    submit.href = `mailto:shaiksharzil@gmail.com?subject=${namevalue}&body=${messagevalue}`
 })
 home.addEventListener("mouseover", function(){
     heading1.style.color ="#C1A7EE"
@@ -98,6 +107,7 @@ load.from(".main h1, .main p, .main i, .main button", {
     stagger:0.2,
     opacity:0,
 })
+if (window.innerWidth >= 600) {
 gsap.from(".main2 h1, .main2 h2, .main2 h3",{
     scale:0,
     delay:1,
@@ -140,64 +150,34 @@ gsap.from(".contact .contactbox, .contact input, .contact textarea, .contact but
         scrub:5
     }
 })
-if (window.innerWidth <= 600) {
-    gsap.from(".skill2 div", {
-        scale: 0,
-        delay: 1,
-        duration: 1,
-        opacity: 0,
-        stagger: 0.2,
-        scrollTrigger: {
-            trigger: ".skill",
-            scroller: "body",
-            start: "top 100%",
-            end: "top 50%",
-            scrub: 5,
-        },
-    });
-    gsap.from(".skill1 div", {
-        scale: 0,
-        delay: 1,
-        duration: 1,
-        opacity: 0,
-        stagger: 0.2,
-        scrollTrigger: {
-            trigger: ".skill",
-            scroller: "body",
-            start: "top 100%",
-            end: "top 50%",
-            scrub: 5,
-        },
-    });
-} else {
-    gsap.from(".skill2 div", {
-        scale: 0,
-        delay: 1,
-        duration: 1,
-        x: 1000,
-        opacity: 0,
-        stagger: 0.2,
-        scrollTrigger: {
-            trigger: ".skill",
-            scroller: "body",
-            start: "top 100%",
-            end: "top 50%",
-            scrub: 5,
-        },
-    });
-    gsap.from(".skill1 div", {
-        scale: 0,
-        delay: 1,
-        duration: 1,
-        x: -1000,
-        opacity: 0,
-        stagger: 0.2,
-        scrollTrigger: {
-            trigger: ".skill",
-            scroller: "body",
-            start: "top 100%",
-            end: "top 50%",
-            scrub: 5,
-        },
-    });
+gsap.from(".skill2 div", {
+    scale: 0,
+    delay: 1,
+    duration: 1,
+    x: 1000,
+    opacity: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".skill",
+        scroller: "body",
+        start: "top 100%",
+        end: "top 50%",
+        scrub: 5,
+    },
+});
+gsap.from(".skill1 div", {
+    scale: 0,
+    delay: 1,
+    duration: 1,
+    x: -1000,
+    opacity: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".skill",
+        scroller: "body",
+        start: "top 100%",
+        end: "top 50%",
+        scrub: 5,
+    },
+});
 }
