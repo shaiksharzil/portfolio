@@ -745,3 +745,57 @@ footer{
         width: 35px;
     }
 }
+@media screen and (min-width: 600px) and (max-width: 840px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mainleft{
+        width: 100%;
+        height: calc(50% - 50px);
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+    .mainright{
+        width: 100%;
+        height: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+    .mainright img{
+        height: 100%;
+        width: 70%;
+    }
+    .mainbottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px 30px 0px;
+    }
+    .skillmain{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .skill1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+    .skill2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+    .skill1 div{
+        margin-bottom: 30px;
+    }
+    .project{
+        margin-bottom: 20px;
+    }
+    .main2{
+        padding: 20px;
+    }
+}
