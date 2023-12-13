@@ -24,6 +24,8 @@ menuButton.addEventListener("click", function(){
         line3.style.rotate = `45deg`;
         line3.style.width = `40px`
         line2.style.display = `none`;
+        line1.style.backgroundColor = `#C1A7EE`
+        line3.style.backgroundColor = `#C1A7EE`
         menuslider.style.display = `flex`;
         gsap.from(".menuslider h2",{
             duration:0.5,
@@ -37,6 +39,8 @@ menuButton.addEventListener("click", function(){
         line3.style.rotate = `0deg`;
         line3.style.width = `20px`
         line2.style.display = `block`;
+        line1.style.backgroundColor = `black`
+        line3.style.backgroundColor = `black`
         menuslider.style.display = `none`;
         menuclick = true;
     }
@@ -68,6 +72,30 @@ contact.addEventListener("mouseover", function(){
     heading4.style.color ="#C1A7EE"
 })
 contact.addEventListener("mouseout", function(){
+    heading4.style.color ="black"
+})
+heading1.addEventListener("mouseover", function(){
+    heading1.style.color ="#C1A7EE"
+})
+heading1.addEventListener("mouseout", function(){
+    heading1.style.color ="black"
+})
+heading2.addEventListener("mouseover", function(){
+    heading2.style.color ="#C1A7EE"
+})
+heading2.addEventListener("mouseout", function(){
+    heading2.style.color ="black"
+})
+heading3.addEventListener("mouseover", function(){
+    heading3.style.color ="#C1A7EE"
+})
+heading3.addEventListener("mouseout", function(){
+    heading3.style.color ="black"
+})
+heading4.addEventListener("mouseover", function(){
+    heading4.style.color ="#C1A7EE"
+})
+heading4.addEventListener("mouseout", function(){
     heading4.style.color ="black"
 })
 gsap.to("nav", {
@@ -108,9 +136,9 @@ load.from(".main h1, .main p, .main i, .main button", {
     opacity:0,
 })
 if (window.innerWidth >= 600) {
-gsap.from(".main2 h1, .main2 h2, .main2 h3",{
-    scale:0,
+gsap.from(".main2 h1, .about h2, .about h3",{
     delay:1,
+    y: 100,
     duration:1,
     opacity: 0,
     stagger:0.2,
@@ -121,37 +149,8 @@ gsap.from(".main2 h1, .main2 h2, .main2 h3",{
         end: "top 50%",
         scrub:5
     }
-})
-gsap.from(".main3 h1, .main3 .project",{
-    scale:0,
-    delay:1,
-    duration:1,
-    opacity: 0,
-    stagger:0.2,
-    scrollTrigger:{
-        trigger:".main3",
-        scroller:"body",
-        start:"top 100%",
-        end: "top 50%",
-        scrub:5
-    }
-})
-gsap.from(".contact .contactbox, .contact input, .contact textarea, .contact button",{
-    scale:0,
-    delay:1,
-    duration:1,
-    opacity: 0,
-    stagger:0.2,
-    scrollTrigger:{
-        trigger:".contact",
-        scroller:"body",
-        start:"top 100%",
-        end: "top 50%",
-        scrub:5
-    }
-})
+});
 gsap.from(".skill2 div", {
-    scale: 0,
     delay: 1,
     duration: 1,
     x: 1000,
@@ -166,7 +165,6 @@ gsap.from(".skill2 div", {
     },
 });
 gsap.from(".skill1 div", {
-    scale: 0,
     delay: 1,
     duration: 1,
     x: -1000,
@@ -179,5 +177,33 @@ gsap.from(".skill1 div", {
         end: "top 50%",
         scrub: 5,
     },
+});
+gsap.from(".main3 h1, .main3 .project",{
+    delay:1,
+    duration:1,
+    y:100,
+    opacity: 0,
+    stagger:0.2,
+    scrollTrigger:{
+        trigger:".main3",
+        scroller:"body",
+        start:"top 100%",
+        end: "top 50%",
+        scrub:5
+    }
+});
+gsap.from(".contact .contactbox, .contact input, .contact textarea, .contact button",{
+    delay:1,
+    duration:1,
+    y:100,
+    opacity: 0,
+    stagger:0.2,
+    scrollTrigger:{
+        trigger:".contact",
+        scroller:"body",
+        start:"top 100%",
+        end: "top 50%",
+        scrub:5
+    }
 });
 }
