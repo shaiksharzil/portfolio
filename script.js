@@ -121,7 +121,7 @@ load.from("nav h2",{
     y:-50,
     duration:0.5,
     stagger:0.2,
-    opacity:0
+    opacity:0,
 })  
 load.from(".main img",{
     x: 20,
@@ -137,11 +137,9 @@ load.from(".main h1, .main p, .main i, .main button", {
 })
 if (window.innerWidth >= 600) {
 gsap.from(".main2 h1, .about h2, .about h3",{
-    delay:1,
     y: 100,
-    duration:1,
+    duration:0.5,
     opacity: 0,
-    stagger:0.2,
     scrollTrigger:{
         trigger:".main2",
         scroller:"body",
@@ -151,11 +149,9 @@ gsap.from(".main2 h1, .about h2, .about h3",{
     }
 });
 gsap.from(".skill2 div", {
-    delay: 1,
-    duration: 1,
-    x: 1000,
+    duration: 0.5,
+    x: 500,
     opacity: 0,
-    stagger: 0.2,
     scrollTrigger: {
         trigger: ".skill",
         scroller: "body",
@@ -165,11 +161,9 @@ gsap.from(".skill2 div", {
     },
 });
 gsap.from(".skill1 div", {
-    delay: 1,
-    duration: 1,
-    x: -1000,
+    duration: 0.5,
+    x: -500,
     opacity: 0,
-    stagger: 0.2,
     scrollTrigger: {
         trigger: ".skill",
         scroller: "body",
@@ -179,11 +173,9 @@ gsap.from(".skill1 div", {
     },
 });
 gsap.from(".main3 h1, .main3 .project",{
-    delay:1,
-    duration:1,
+    duration:0.5,
     y:100,
     opacity: 0,
-    stagger:0.2,
     scrollTrigger:{
         trigger:".main3",
         scroller:"body",
@@ -192,12 +184,34 @@ gsap.from(".main3 h1, .main3 .project",{
         scrub:5
     }
 });
-gsap.from(".contact .contactbox, .contact input, .contact textarea, .contact button",{
-    delay:1,
-    duration:1,
+gsap.from(".contact h1",{
+    duration:0.5,
     y:100,
     opacity: 0,
-    stagger:0.2,
+    scrollTrigger:{
+        trigger:".contact",
+        scroller:"body",
+        start:"top 100%",
+        end: "top 50%",
+        scrub:5
+    }
+});
+gsap.from(".contactbox",{
+    duration:0.5,
+    x:-100,
+    opacity: 0,
+    scrollTrigger:{
+        trigger:".contact",
+        scroller:"body",
+        start:"top 100%",
+        end: "top 50%",
+        scrub:5
+    }
+});
+gsap.from(".contact input, .contact textarea, .contact button",{
+    duration:0.5,
+    x:100,
+    opacity: 0,
     scrollTrigger:{
         trigger:".contact",
         scroller:"body",
