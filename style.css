@@ -247,7 +247,6 @@ nav{
 .html{
     display: flex;
     align-items: center;
-    background-color: white;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
@@ -258,12 +257,10 @@ nav{
 }
 .html i{
     font-size: 50px;
-    background-color: white;
 }
 .css{
     display: flex;
     align-items: center;
-    background-color: white;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
@@ -274,12 +271,10 @@ nav{
 }
 .css i{
     font-size: 50px;
-    background-color: white;
 }
 .javascript{
     display: flex;
     align-items: center;
-    background-color: white;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
@@ -290,12 +285,10 @@ nav{
 }
 .javascript i{
     font-size: 50px;
-    background-color: white;
 }
 .bootstrap{
     display: flex;
     align-items: center;
-    background-color: white;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
@@ -306,7 +299,6 @@ nav{
 }
 .bootstrap i{
     font-size: 50px;
-    background-color: white;
 }
 .skill2{
     display: flex;
@@ -324,7 +316,6 @@ nav{
 .react{
     display: flex;
     align-items: center;
-    background-color: white;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
@@ -335,12 +326,10 @@ nav{
 }
 .react i{
     font-size: 50px;
-    background-color: white;
 }
 .python{
     display: flex;
     align-items: center;
-    background-color: white;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
@@ -353,13 +342,11 @@ nav{
     height: 55px;
     width: 55px;
     object-fit: cover;
-    background-color: white;
 }
 .git{
     display: flex;
     align-items: center;
     border: 1px solid white;
-    background-color: white;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
@@ -370,7 +357,6 @@ nav{
 }
 .git i{
     font-size: 50px;
-    background-color: white;
 }
 .msoffice{
     display: flex;
@@ -388,24 +374,6 @@ nav{
     height: 55px;
     width: 55px;
     object-fit: cover;
-    background-color: white;
-}
-@keyframes border {
-    25%{
-        border-top: 2px solid;
-    }
-    50%{
-        border-right: 2px solid;
-    }
-    75%{
-        border-bottom: 2px solid;
-    }
-    100%{
-        border-left: 2px solid;
-    }
-}
-.skill1 div:hover, .skill2 div:hover{
-    animation: border linear infinite 1s;
 }
 .main3{
     width: 100%;
@@ -449,7 +417,6 @@ nav{
     margin-bottom: 20px;
     border-radius: 12px;
     font-size: 25px;
-    transition: 0.5s;
 }
 .project button:hover{
     color: white;
