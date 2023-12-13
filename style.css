@@ -41,7 +41,7 @@ nav{
     background-color: transparent;
     box-shadow: 0px 0px 5px black;
     z-index: 99;
-} 
+}
 .logo{
     height: 100%;
     width: 40%;
@@ -149,6 +149,10 @@ nav{
     font-weight: 700;
     font-size: 40px;
 }
+.mainleft i:hover, .mainleft button:hover{
+    background-color: #C1A7EE;
+    color: white;
+}
 .mainright{
     height: 100%;
     width: 50%;
@@ -237,12 +241,6 @@ nav{
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
-.skill1 div {
-    transition: ease;
-}
-.skill2 div{
-    transition: ease;
-}
 .main3 .project{
     transition: ease;
 }
@@ -253,13 +251,12 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
+    color: orangered;
 }
 .html h2{
     font-size: 35px;
-    color: orangered;
 }
 .html i{
-    color: orangered;
     font-size: 50px;
     background-color: white;
 }
@@ -270,13 +267,12 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
+    color: #0852e9;    
 }
 .css h2{
     font-size: 35px;
-    color: #0852e9;
 }
 .css i{
-    color:  #0852e9;
     font-size: 50px;
     background-color: white;
 }
@@ -287,13 +283,12 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
+    color: #f7e025;
 }
 .javascript h2{
     font-size: 35px;
-    color: #f7e025;
 }
 .javascript i{
-    color: #f7e025;
     font-size: 50px;
     background-color: white;
 }
@@ -304,13 +299,12 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
+    color: #8118fa;
 }
 .bootstrap h2{
     font-size: 35px;
-    color: #8118fa;
 }
 .bootstrap i{
-    color: #8118fa;
     font-size: 50px;
     background-color: white;
 }
@@ -334,13 +328,12 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
+    color: #08d9ff;
 }
 .react h2{
     font-size: 35px;
-    color: #08d9ff;
 }
 .react i{
-    color: #08d9ff;
     font-size: 50px;
     background-color: white;
 }
@@ -351,13 +344,12 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
+    color: #0079b0;
 }
 .python h2{
     font-size: 35px;
-    color: #0079b0;
 }
 .python img{
-    color: #0079b0;
     height: 55px;
     width: 55px;
     object-fit: cover;
@@ -371,13 +363,12 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius: 15px;
+    color: black;
 }
 .git h2{
     font-size: 35px;
-    color: black;
 }
 .git i{
-    color: black;
     font-size: 50px;
     background-color: white;
 }
@@ -388,16 +379,33 @@ nav{
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius:15px;
+    color: #e43a00;
 }
 .msoffice h2{
     font-size: 35px;
-    color: #e43a00;
 }
 .msoffice img{
     height: 55px;
     width: 55px;
     object-fit: cover;
     background-color: white;
+}
+@keyframes border {
+    25%{
+        border-top: 2px solid;
+    }
+    50%{
+        border-right: 2px solid;
+    }
+    75%{
+        border-bottom: 2px solid;
+    }
+    100%{
+        border-left: 2px solid;
+    }
+}
+.skill1 div:hover, .skill2 div:hover{
+    animation: border linear infinite 1s;
 }
 .main3{
     width: 100%;
@@ -432,6 +440,27 @@ nav{
     text-align: center;
     padding-bottom: 20px;
 }
+.project button{
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    color: #C1A7EE;
+    border: 1px solid #C1A7EE;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.project button:hover{
+    color: white;
+    background-color: #C1A7EE;
+}
+.contact h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
 .contact1{
     display: flex;
     justify-content: space-around;
@@ -449,9 +478,15 @@ nav{
     margin-bottom: 30px;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
 }
+.contactbox:hover{
+    background-color: #c1a7ee44;
+}
 .contactbox h2{
     color: #C1A7EE;
     margin-bottom: 30px;
+}
+.contactbox h3:hover{
+    color: #C1A7EE;
 }
 .inputfield{
     height: 350px;
@@ -492,6 +527,10 @@ textarea{
     border-radius: 7px;
     font-size: 15px;
 }
+.inputfield button:hover{
+    background-color: #C1A7EE;
+    color: white;
+}
 .footer-social-icons .ri-github-fill{
     font-size: 30px;
     border-radius: 50%;
@@ -504,6 +543,9 @@ footer{
     row-gap: 30px;
     background: #F8F8F8;
     padding-block: 40px 60px;
+}
+footer i:hover{
+    color: #C1A7EE;
 }
 .top-footer p{
     font-size: 25px;
@@ -520,6 +562,9 @@ footer{
     color: rgb(68, 68, 68);
     font-weight: 500;
     margin-inline: 20px;
+}
+.footer_menu_list a:hover{
+    color: #C1A7EE;
 }
 .footer-social-icons{
     display: flex;
@@ -675,6 +720,14 @@ footer{
     .projects{
         gap: 15px;
     }
+    .project h2{
+        margin-top: 10px;
+    }
+    .project button{
+        width: 200px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
     .projects a{
         width: 100%;
         display: flex;
@@ -686,6 +739,11 @@ footer{
         width: 150px;
         border-radius: 20px;
         z-index: -1;
+    }
+    .contact h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
     }
     .contact1{
         display: flex;
