@@ -81,19 +81,19 @@ nav{
     height: 2px;
     width: 40px;
     background-color: black;
-    transition: linear 0.5s;
+    transition: linear 0.2s;
 }
 .line2{
     height: 2px;
     width: 30px;
     background-color: black;
-    transition: linear 0.5s;
+    transition: linear 0.2s;
 }
 .line3{
     height: 2px;
     width: 20px;
     background-color: black;
-    transition: linear 0.5s;
+    transition: linear 0.2s;
 }
 .nav1{
     height: 100px;
