@@ -17,6 +17,11 @@ let submitbtn = document.querySelector(".submitbtn");
 let nameinput = document.querySelector(".nameinput");
 let messageinput = document.querySelector("#messageinput");
 let menuclick = true
+document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(() => {
+        document.body.style.overflowY = "auto"
+    }, 6000);
+})
 menuButton.addEventListener("click", function(){
     if (menuclick == true) {
         menuButton.style.gap = `0px`;
@@ -98,27 +103,15 @@ heading4.addEventListener("mouseover", function(){
 heading4.addEventListener("mouseout", function(){
     heading4.style.color ="black"
 })
-gsap.to("nav", {
-    backgroundColor:"transparent",
-    height:"70px",
-    duration:0.5,
-    scrollTrigger:{
-        trigger:"#nav",
-        scroller:"body",
-        start:"top -10%",
-        end:"top -11%",
-        scrub:5
-    }
-})
 let load = gsap.timeline();
 load.to(".load",{
     duration:1,
     delay:2,
-    scale:0
+    y:-1000
 })
 load.from("nav",{
     opacity:0,
-    duration:0.5,
+    duration:0.2,
     y:-50,
 })
 load.from("nav h2",{
@@ -139,6 +132,18 @@ load.from(".main h1, .main p, .main i, .main button", {
     opacity:0,
 })
 if (window.innerWidth >= 600) {
+    gsap.to("nav", {
+        backgroundColor:"transparent",
+        height:"70px",
+        duration:0.5,
+        scrollTrigger:{
+            trigger:"#nav",
+            scroller:"body",
+            start:"top -10%",
+            end:"top -11%",
+            scrub:5
+        }
+    })
 gsap.from(".main2 h1, .about h2, .about h3",{
     y: 100,
     duration:0.5,
