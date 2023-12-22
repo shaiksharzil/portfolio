@@ -111,11 +111,15 @@ gsap.to("nav", {
     }
 })
 let load = gsap.timeline();
+load.to(".load",{
+    duration:1,
+    delay:2,
+    scale:0
+})
 load.from("nav",{
     opacity:0,
     duration:0.5,
     y:-50,
-    delay:0.5
 })
 load.from("nav h2",{
     y:-50,
@@ -126,7 +130,6 @@ load.from("nav h2",{
 load.from(".main img",{
     x: 20,
     opacity:0,
-    stagger: 0.2,
     duration: 0.5,
 })
 load.from(".main h1, .main p, .main i, .main button", {
@@ -152,6 +155,7 @@ gsap.from(".skill2 div", {
     duration: 0.5,
     x: 500,
     opacity: 0,
+    stagger:0.2,
     scrollTrigger: {
         trigger: ".skill",
         scroller: "body",
@@ -164,6 +168,7 @@ gsap.from(".skill1 div", {
     duration: 0.5,
     x: -500,
     opacity: 0,
+    stagger:0.2,
     scrollTrigger: {
         trigger: ".skill",
         scroller: "body",
@@ -176,6 +181,7 @@ gsap.from(".main3 h1, .main3 .project",{
     duration:0.5,
     y:100,
     opacity: 0,
+    stagger:0.2,
     scrollTrigger:{
         trigger:".main3",
         scroller:"body",
