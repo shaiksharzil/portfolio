@@ -13,6 +13,11 @@ html,body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: url(arrow.png), auto;
+}
+.navhead h2, i,button, a, input, textarea{
+    cursor: url(pointer.png), auto;
 }
 .load{
     height: 100%;
@@ -21,7 +26,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #c1a7ee44;
     z-index: 100;
 }
 .loader {
@@ -102,9 +107,6 @@ a{
     text-decoration: none;
     color: black;
 }
-button{
-    cursor: pointer;
-}
 .bottom-footer a{
     color: #C1A7EE;
 }
@@ -121,7 +123,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     background-color: transparent;
     box-shadow: 0px 0px 5px black;
     z-index: 99;
@@ -554,6 +556,9 @@ input{
     border: none;
     box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
 
+}
+input:focus, textarea:focus{
+outline-color: #C1A7EE;
 }
 input:nth-child(1){
     margin-right: 4%;
