@@ -20,7 +20,7 @@ let menuclick = true
 document.addEventListener("DOMContentLoaded", function(){
     setTimeout(() => {
         document.body.style.overflowY = "auto"
-    }, 6000);
+    }, 5600);
 })
 menuButton.addEventListener("click", function(){
     if (menuclick == true) {
