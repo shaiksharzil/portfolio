@@ -123,11 +123,11 @@ load.from("nav h2",{
 load.from(".main img",{
     x: 20,
     opacity:0,
-    duration: 0.5,
+    duration: 0.3,
 })
 load.from(".main h1, .main p, .main i, .main button", {
     x: -50,
-    duration:0.5,
+    duration:0.3,
     stagger:0.2,
     opacity:0,
 })
