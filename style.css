@@ -35,7 +35,7 @@ img::selection{
         -ms-user-select: none;
             user-select: none;
 }
-.navhead h2, i,button, a, input, textarea{
+.navhead h2,button, a, input, textarea{
     cursor: url(pointer.png), auto;
 }
 .load{
