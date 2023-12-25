@@ -224,7 +224,6 @@ gsap.from(".contact input, .contact textarea, .contact button",{
     duration:0.5,
     x:100,
     opacity: 0,
-    stagger:0.1,
     scrollTrigger:{
         trigger:".contact",
         scroller:"body",
