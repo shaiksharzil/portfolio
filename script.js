@@ -20,7 +20,7 @@ let menuclick = true
 document.addEventListener("DOMContentLoaded", function(){
     setTimeout(() => {
         document.body.style.overflowY = "auto"
-    }, 5600);
+    }, 5500);
 })
 menuButton.addEventListener("click", function(){
     if (menuclick == true) {
@@ -148,6 +148,7 @@ gsap.from(".main2 h1, .about h2, .about h3",{
     y: 100,
     duration:0.5,
     opacity: 0,
+    stagger:0.1,
     scrollTrigger:{
         trigger:".main2",
         scroller:"body",
@@ -160,7 +161,7 @@ gsap.from(".skill2 div", {
     duration: 0.5,
     x: 500,
     opacity: 0,
-    stagger:0.2,
+    stagger:0.1,
     scrollTrigger: {
         trigger: ".skill",
         scroller: "body",
@@ -173,7 +174,7 @@ gsap.from(".skill1 div", {
     duration: 0.5,
     x: -500,
     opacity: 0,
-    stagger:0.2,
+    stagger:0.1,
     scrollTrigger: {
         trigger: ".skill",
         scroller: "body",
@@ -186,7 +187,7 @@ gsap.from(".main3 h1, .main3 .project",{
     duration:0.5,
     y:100,
     opacity: 0,
-    stagger:0.2,
+    stagger:0.1,
     scrollTrigger:{
         trigger:".main3",
         scroller:"body",
@@ -223,6 +224,7 @@ gsap.from(".contact input, .contact textarea, .contact button",{
     duration:0.5,
     x:100,
     opacity: 0,
+    stagger:0.1,
     scrollTrigger:{
         trigger:".contact",
         scroller:"body",
