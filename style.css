@@ -17,6 +17,12 @@ html,body{
     overflow-y: hidden;
     cursor: url(arrow.png), auto;
 }
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #C1A7EE;
+}
 p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, span::-moz-selection, button::-moz-selection, a::-moz-selection, input::-moz-selection, textarea::-moz-selection{
     background-color: #C1A7EE;
     color: white;
@@ -912,6 +918,9 @@ footer i:hover{
     margin-top: 10px;
 }
 @media screen and (max-width: 600px) {
+    body::-webkit-scrollbar {
+        width: 0.2em;
+    }
     .loader{
         scale: 1;
     }
