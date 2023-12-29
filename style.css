@@ -919,7 +919,7 @@ footer i:hover{
 }
 @media screen and (max-width: 600px) {
     body::-webkit-scrollbar {
-        width: 0.2em;
+        width: 0.3em;
     }
     .loader{
         scale: 1;
