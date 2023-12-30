@@ -24,11 +24,15 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 menuButton.addEventListener("click", function(){
     if (menuclick == true) {
-        menuButton.style.gap = `0px`;
+        line2.style.transform = `translate(-50px, 0px)`
+        line2.style.opacity = 0
+        line2.style.margin = `0px`
+        line3.style.margin = `0px`
+        line1.style.margin = `0px`        
         line1.style.rotate = `-45deg`;
         line3.style.rotate = `45deg`;
         line3.style.width = `40px`
-        line2.style.display = `none`;
+        line2.style.width = `40px`
         line1.style.backgroundColor = `#C1A7EE`
         line3.style.backgroundColor = `#C1A7EE`
         menuslider.style.display = `flex`;
@@ -39,11 +43,15 @@ menuButton.addEventListener("click", function(){
         })
         menuclick = false;
     } else {
-        menuButton.style.gap = `5px`;
+        line2.style.transform = `translate(0px, 0px)`
+        line2.style.opacity = 1
+        line2.style.margin = `2.5px 0px`
+        line3.style.margin = `2.5px 0px`
+        line1.style.margin = `2.5px 0px`
         line1.style.rotate = `0deg`;
         line3.style.rotate = `0deg`;
         line3.style.width = `20px`
-        line2.style.display = `block`;
+        line2.style.width = `30px`
         line1.style.backgroundColor = `black`
         line3.style.backgroundColor = `black`
         menuslider.style.display = `none`;
@@ -242,28 +250,4 @@ gsap.from(".contact input, .contact textarea, .contact button",{
         scrub:3
     }
 });
-}
-else{
-    gsap.to("nav", {
-        boxShadow: "0px 0px 5px black",
-        height:"60px",
-        duration:0.2,
-        scrollTrigger:{
-            trigger:"#nav",
-            scroller:"body",
-            start:"top 0%",
-            end:"top -0.1%",
-            scrub:0.5
-        }
-    })
-    gsap.to(".nav1", {
-        height: `60px`,
-        scrollTrigger:{
-            trigger:"#nav",
-            scroller:"body",
-            start:"top 0%",
-            end:"top -0.1%",
-            scrub:0.5
-        }
-    })
 }
