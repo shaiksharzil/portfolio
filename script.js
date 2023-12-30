@@ -114,16 +114,25 @@ load.from("nav",{
     duration:0.2,
     y:-50,
 })
-load.from("nav h2",{
-    y:-50,
-    duration:0.5,
-    stagger:0.2,
-    opacity:0,
-})  
+if (window.innerWidth >= 600) {
+    load.from("nav h2",{
+        y:-50,
+        duration:0.5,
+        stagger:0.2,
+        opacity:0,
+    }) 
+} 
+else{
+    load.from("nav .logo",{
+        y:-50,
+        duration:0.2,
+        opacity:0,
+    }) 
+}
 load.from(".main img",{
-    x: 20,
+    x: 30,
     opacity:0,
-    duration: 0.3,
+    duration: 0.5,
 })
 load.from(".main h1, .main p, .main i, .main button", {
     x: -50,
@@ -134,19 +143,20 @@ load.from(".main h1, .main p, .main i, .main button", {
 if (window.innerWidth >= 600) {
     gsap.to("nav", {
         backgroundColor:"transparent",
+        boxShadow: "0px 0px 5px black",
         height:"70px",
-        duration:0.5,
+        duration:0.2,
         scrollTrigger:{
             trigger:"#nav",
             scroller:"body",
-            start:"top -10%",
-            end:"top -11%",
-            scrub:5
+            start:"top 0%",
+            end:"top -0.1%",
+            scrub:0.5
         }
     })
 gsap.from(".main2 h1, .about h2, .about h3",{
     y: 100,
-    duration:0.5,
+    duration:0.2,
     opacity: 0,
     stagger:0.1,
     scrollTrigger:{
@@ -154,7 +164,7 @@ gsap.from(".main2 h1, .about h2, .about h3",{
         scroller:"body",
         start:"top 100%",
         end: "top 50%",
-        scrub:5
+        scrub:3
     }
 });
 gsap.from(".skill2 div", {
@@ -167,7 +177,7 @@ gsap.from(".skill2 div", {
         scroller: "body",
         start: "top 100%",
         end: "top 50%",
-        scrub: 5,
+        scrub: 2,
     },
 });
 gsap.from(".skill1 div", {
@@ -180,7 +190,7 @@ gsap.from(".skill1 div", {
         scroller: "body",
         start: "top 100%",
         end: "top 50%",
-        scrub: 5,
+        scrub: 2,
     },
 });
 gsap.from(".main3 h1, .main3 .project",{
@@ -205,7 +215,7 @@ gsap.from(".contact h1",{
         scroller:"body",
         start:"top 100%",
         end: "top 50%",
-        scrub:5
+        scrub:3
     }
 });
 gsap.from(".contactbox",{
@@ -217,7 +227,7 @@ gsap.from(".contactbox",{
         scroller:"body",
         start:"top 100%",
         end: "top 50%",
-        scrub:5
+        scrub:3
     }
 });
 gsap.from(".contact input, .contact textarea, .contact button",{
@@ -229,7 +239,31 @@ gsap.from(".contact input, .contact textarea, .contact button",{
         scroller:"body",
         start:"top 100%",
         end: "top 50%",
-        scrub:5
+        scrub:3
     }
 });
+}
+else{
+    gsap.to("nav", {
+        boxShadow: "0px 0px 5px black",
+        height:"60px",
+        duration:0.2,
+        scrollTrigger:{
+            trigger:"#nav",
+            scroller:"body",
+            start:"top 0%",
+            end:"top -0.1%",
+            scrub:0.5
+        }
+    })
+    gsap.to(".nav1", {
+        height: `60px`,
+        scrollTrigger:{
+            trigger:"#nav",
+            scroller:"body",
+            start:"top 0%",
+            end:"top -0.1%",
+            scrub:0.5
+        }
+    })
 }
