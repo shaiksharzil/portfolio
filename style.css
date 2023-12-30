@@ -277,7 +277,7 @@ nav{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 5px;
+    /* gap: 5px; */
     padding-right: 25px;
 }
 .line1{
@@ -287,6 +287,7 @@ nav{
     -webkit-transition: linear 0.2s;
     -o-transition: linear 0.2s;
     transition: linear 0.2s;
+    margin: 2.5px 0px;
 }
 .line2{
     height: 2px;
@@ -295,6 +296,7 @@ nav{
     -webkit-transition: linear 0.2s;
     -o-transition: linear 0.2s;
     transition: linear 0.2s;
+    margin: 2.5px 0px;
 }
 .line3{
     height: 2px;
@@ -303,6 +305,7 @@ nav{
     -webkit-transition: linear 0.2s;
     -o-transition: linear 0.2s;
     transition: linear 0.2s;
+    margin: 2.5px 0px;
 }
 .nav1{
     height: 100px;
@@ -330,9 +333,9 @@ nav{
     -webkit-animation: menu 0.5s;
             animation: menu 0.5s;
     background: white;
-    -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
-background-color: transparent;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: transparent;
     z-index: 99;
 }
 @-webkit-keyframes menu {
@@ -929,12 +932,11 @@ footer i:hover{
         padding-left: 20px;
     }
     nav{
-        height: 70px;
-        -webkit-backdrop-filter: blur(5px);
-                backdrop-filter: blur(5px);
+        height: 60px;
+        box-shadow: 0px 0px 5px black;
     }
     .nav1{
-        height: 70px;
+        height: 60px;
     }
     .menu{
         display: -webkit-box;
@@ -952,7 +954,7 @@ footer i:hover{
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .mainleft{
         height: 50vh;
