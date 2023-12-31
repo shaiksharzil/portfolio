@@ -164,20 +164,6 @@ if (window.innerWidth >= 600) {
             scrub:0.5
         }
     })
-}else{
-    gsap.to("nav", {
-        boxShadow: "0px 0px 5px black",
-        height:"60px",
-        duration:0.2,
-        scrollTrigger:{
-            trigger:"#nav",
-            scroller:"body",
-            start:"top 0%",
-            end:"top -0.1%",
-            scrub:0.5
-        }
-    })
-}
 gsap.from(".main2 h1, .about h2, .about h3",{
     y: 100,
     duration:0.2,
@@ -266,3 +252,4 @@ gsap.from(".contact input, .contact textarea, .contact button",{
         scrub:3
     }
 });
+}
