@@ -27,13 +27,14 @@ menuButton.addEventListener("click", function(){
         line2.style.transform = `translate(-50px, 0px)`
         line2.style.opacity = 0
         line2.style.margin = `0px`
-        line3.style.margin = `0px`
+        line3.style.margin = `-2.5px`
         line1.style.margin = `0px`        
         line1.style.rotate = `-45deg`;
         line3.style.rotate = `45deg`;
         line3.style.width = `40px`
         line2.style.width = `40px`
         line1.style.backgroundColor = `#C1A7EE`
+        line2.style.backgroundColor = `#C1A7EE`
         line3.style.backgroundColor = `#C1A7EE`
         menuslider.style.display = `flex`;
         gsap.from(".menuslider h2",{
@@ -53,6 +54,7 @@ menuButton.addEventListener("click", function(){
         line3.style.width = `20px`
         line2.style.width = `30px`
         line1.style.backgroundColor = `black`
+        line2.style.backgroundColor = `black`
         line3.style.backgroundColor = `black`
         menuslider.style.display = `none`;
         menuclick = true;
@@ -162,6 +164,20 @@ if (window.innerWidth >= 600) {
             scrub:0.5
         }
     })
+}else{
+    gsap.to("nav", {
+        boxShadow: "0px 0px 5px black",
+        height:"60px",
+        duration:0.2,
+        scrollTrigger:{
+            trigger:"#nav",
+            scroller:"body",
+            start:"top 0%",
+            end:"top -0.1%",
+            scrub:0.5
+        }
+    })
+}
 gsap.from(".main2 h1, .about h2, .about h3",{
     y: 100,
     duration:0.2,
@@ -250,4 +266,3 @@ gsap.from(".contact input, .contact textarea, .contact button",{
         scrub:3
     }
 });
-}
