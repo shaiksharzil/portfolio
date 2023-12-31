@@ -277,7 +277,6 @@ nav{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /* gap: 5px; */
     padding-right: 25px;
 }
 .line1{
@@ -932,8 +931,7 @@ footer i:hover{
         padding-left: 20px;
     }
     nav{
-        height: 60px;
-        box-shadow: 0px 0px 5px black;
+        height: 70px;
     }
     .nav1{
         height: 60px;
