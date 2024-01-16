@@ -610,15 +610,9 @@ nav{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-}
-.skill2 div{
-    margin-bottom: 15px;
-}
-.skill1 div{
-    margin-bottom: 15px;
 }
 .react{
     display: -webkit-box;
@@ -658,6 +652,7 @@ nav{
 .python img{
     height: 55px;
     width: 55px;
+    scale: 0.8;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -693,7 +688,7 @@ nav{
             box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     padding: 0px 15px;
     border-radius:15px;
-    color: #e43a00;
+    color: #117F44;
 }
 .msoffice h2{
     font-size: 35px;
@@ -701,8 +696,198 @@ nav{
 .msoffice img{
     height: 55px;
     width: 55px;
+    scale: 0.8;
     -o-object-fit: cover;
        object-fit: cover;
+}
+.c{
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.c h2{
+    font-size: 35px;
+    color: #00589d;
+}
+.skillmain img{
+    height: 55px;
+    width: 55px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.c img{
+    scale: 0.8;
+}
+.tailwind{
+            display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.tailwind h2{
+    font-size: 35px;
+    color: #0082c6;
+}
+.node{
+                display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+
+}
+.node h2{
+    font-size: 35px;
+    color: #8cc84c;
+}
+.express{
+                display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+
+}
+.express img{
+    scale: 0.8;
+}
+.express h2{
+    font-size: 35px;
+    color: #828282;
+}
+.skill3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.skill4{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.mysql{
+                display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+
+}
+.mysql img{
+    scale: 0.8;
+}
+.mysql h2{
+    font-size: 35px;
+    color: #4479a1;
+}
+.mongodb{
+                display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+
+}
+.mongodb h2{
+    font-size: 35px;
+    color: #439934;
+}
+.redux{
+                display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+
+}
+.redux h2{
+    font-size: 35px;
+    color: #7d47c3;
+}
+.gsap{
+                display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
+    padding: 0px 15px;
+    border-radius: 15px;
+
+}
+.gsap img{
+    height: 65px;
+    scale: 0.8;
+}
+.gsap h2{
+    font-size: 35px;
+    color: #8AC640;
 }
 .main3{
     width: 100%;
@@ -738,6 +923,9 @@ nav{
         -ms-flex-direction: column;
             flex-direction: column;
 }
+.newspro{
+    height: 400px;
+}
 .project img{
     height: 300px;
     width: 300px;
@@ -745,12 +933,27 @@ nav{
        object-fit: cover;
     scale: 0.9;
     z-index: -1;
+    border-radius: 12.5px;
 }
 .project h2{
     text-align: center;
     padding-bottom: 20px;
 }
-.project button{
+.probtn{
+    display: flex;
+    flex-direction: column;
+}
+.livebtn{
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    color: #C1A7EE;
+    border: 1px solid #C1A7EE;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 25px;    
+}
+.gitbtn{
     height: 40px;
     width: 250px;
     background-color: white;
@@ -759,6 +962,16 @@ nav{
     margin-bottom: 20px;
     border-radius: 12px;
     font-size: 25px;
+}
+.newsbtn{
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    color: #C1A7EE;
+    border: 1px solid #C1A7EE;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-size: 20px;
 }
 .project button:hover{
     color: white;
@@ -831,6 +1044,9 @@ input{
     -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
             box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
 
+}
+.emailinput{
+    margin-left: 25px;
 }
 input:focus, textarea:focus{
 outline-color: #C1A7EE;
@@ -1039,6 +1255,7 @@ footer i:hover{
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
+                margin-bottom: -15px;
     }
     .skill1{
         -webkit-box-orient: vertical;
@@ -1073,11 +1290,11 @@ footer i:hover{
         height: 32px;
         width: 32px;
     }
-    .skill1 h2{
+    .skill h2{
         font-size: 20px;
     }
-    .skill2 h2{
-        font-size: 20px;
+    .tailwind h2{
+        font-size: 18px;
     }
     .skill2{
         -webkit-box-orient: vertical;
@@ -1094,7 +1311,48 @@ footer i:hover{
                 justify-content:flex-start ;
         gap: 10px;
         padding-right: 10px;
-        margin-bottom: 15px;
+    }
+        .skill3{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        gap: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+    .skill3 div{
+        border-radius: 7px;
+        -webkit-box-shadow: 0px 0px 5px 0.25 black ;
+                box-shadow: 0px 0px 5px 0.25 black ;
+        padding: 5px 15px;
+        margin-bottom: 0px;
+    }
+        .skill4{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        gap: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px
+    }
+    .skill4 div{
+        border-radius: 7px;
+        -webkit-box-shadow: 0px 0px 5px 0.25 black ;
+                box-shadow: 0px 0px 5px 0.25 black ;
+        padding: 5px 15px;
+        margin-bottom: 0px;
     }
     .git h2{
         font-size: 16px;
@@ -1117,15 +1375,28 @@ footer i:hover{
         -webkit-box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
                 box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.25);
     }
+    .newspro{
+        height: 150px;
+    }
     .projects{
         gap: 15px;
     }
     .project h2{
         margin-top: 10px;
     }
-    .project button{
-        width: 200px;
+    .probtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .gitbtn, .livebtn{
+        width: 90px;
         margin-bottom: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .newsbtn{
+        width: 200px;
         font-size: 20px;
     }
     .projects a{
@@ -1203,6 +1474,10 @@ footer i:hover{
         border-radius: 5px;
         margin-bottom: 5px;
         border: none;
+        margin-left: 0px;
+    }
+    .emailinput{
+        margin-left: 0px;
     }
     textarea{
         width: 100%;
