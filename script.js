@@ -9,10 +9,10 @@ let heading2= document.querySelector(".heading2");
 let heading3= document.querySelector(".heading3");
 let heading4= document.querySelector(".heading4");
 let about = document.querySelector("#aboutlink");
-let home= document.querySelector("#home");
+let home = document.querySelector("#home");
+let submit = document.querySelector(".submit");
 let project = document.querySelector(".projects");
 let contact = document.querySelector("#contactlink");
-let submit = document.querySelector(".submit");
 let submitbtn = document.querySelector(".submitbtn");
 let nameinput = document.querySelector(".nameinput");
 let messageinput = document.querySelector("#messageinput");
@@ -59,11 +59,6 @@ menuButton.addEventListener("click", function(){
         menuslider.style.display = `none`;
         menuclick = true;
     }
-})
-submit.addEventListener("click", function(){
-    let namevalue = nameinput.value;
-    let messagevalue = messageinput.value;
-    submit.href = `mailto:shaiksharzil@gmail.com?subject=${namevalue}&body=${messagevalue}`
 })
 home.addEventListener("mouseover", function(){
     heading1.style.color ="#C1A7EE"
@@ -177,7 +172,7 @@ gsap.from(".main2 h1, .about h2, .about h3",{
         scrub:3
     }
 });
-gsap.from(".skill2 div", {
+gsap.from(".skill1 div", {
     duration: 0.5,
     x: 500,
     opacity: 0,
@@ -190,7 +185,7 @@ gsap.from(".skill2 div", {
         scrub: 2,
     },
 });
-gsap.from(".skill1 div", {
+gsap.from(".skill2 div", {
     duration: 0.5,
     x: -500,
     opacity: 0,
@@ -203,6 +198,32 @@ gsap.from(".skill1 div", {
         scrub: 2,
     },
 });
+gsap.from(".skill3 div", {
+  duration: 0.5,
+  x: 500,
+  opacity: 0,
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".skill",
+    scroller: "body",
+    start: "top 75%",
+    end: "top 25%",
+    scrub: 2,
+  },
+});
+gsap.from(".skill4 div", {
+  duration: 0.5,
+  x: -500,
+  opacity: 0,
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".skill",
+    scroller: "body",
+    start: "top 75%",
+    end: "top 37.5%",
+    scrub: 2,
+  },
+});
 gsap.from(".main3 h1, .main3 .project",{
     duration:0.5,
     y:100,
@@ -212,7 +233,7 @@ gsap.from(".main3 h1, .main3 .project",{
         trigger:".main3",
         scroller:"body",
         start:"top 100%",
-        end: "top 50%",
+        end: "top 37.5%",
         scrub:5
     }
 });
